@@ -1,0 +1,214 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+/* Style for the header */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: justify;
+    background-color: #005a99;
+    color: #fff;
+    padding: 20px;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #004085;
+    color: white;
+}
+  
+  .logo {
+    text-align: center; /* Centers the business name below the logo */
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  .logo .business-name {
+    margin-top: 5px; /* Space between the logo and business name */
+    font-size: 14px; /* Slightly smaller font for the name */
+    font-weight: bold;
+    color: white; /* Matches the header text */
+  }
+  
+  .header-text {
+    flex: 1; /* Allows the text to occupy the remaining space */
+    margin-left: 20px; /* Adds space between the logo and the text */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .header-text p {
+    margin: 0;
+    line-height: 1.5; /* Improves readability */
+  }
+  
+  .header-text p span {
+    color: #ffd700; /* Optional: Gold accent for key details */
+  }
+  
+
+/* Style for navigation links */
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-bar {
+    background-color:#005a99;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.top-bar nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.content {
+    text-align:justify;
+    padding: 2rem 1rem;
+}
+
+content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #004085;
+}
+
+content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #004085;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0062cc;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* General footer styling */
+footer {
+    background-color: #222; /* Black footer background */
+    color: #fff; /* White text for contrast */
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Footer layout with flexbox */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the footer content */
+    padding: 20px;
+}
+
+/* Developer details on the left */
+.developer-details {
+    width: 20%; /* 20% width for left section */
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Loan calculator centered */
+.loan-calculator {
+    width: 60%; /* 60% width for center section */
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff; /* White background for calculator */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.loan-calculator h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.loan-calculator input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#calculate-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#calculate-btn:hover {
+    background-color: #0056b3;
+}
+
+.results p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.results span {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Social media links on the right */
+.social-media {
+    width: 20%; /* 20% width for right section */
+    text-align: right;
+    font-size: 14px;
+}
+
+.social-media a {
+    display: block;
+    color: #00aced; /* Twitter blue color for links */
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+  
+    

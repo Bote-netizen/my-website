@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Loan Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+          <img src="images/logo1.webp" alt="Assisted Loans Logo" />
+          <p class="business-name">Assisted Loans</p>
+        </div>
+        <div class="header-text">
+          <p>Providing trusted short-term loans with care and support, focused on helping you bridge financial gaps. Contact Us: Phone 77459070 | Email:<a href = "mailto:lofinassist@gmail.com">alf@gmail.com</a></p>
+        </div>
+      </header>
+      
+    <main class="content">
+        <h1>Instant Cash, Right When You Need It!</h1>
+        <p>Assisted Loans and Finanace is here to help. We understand that life can throw unexpected expenses your way, and waiting isn't always and option.That's why our instant loans are designed to provide, fast, hassle free acess to the funds you need, right when you need them.With a quick application process and immediate approval, ALF ensures you can handle any urgent financial need with confidence and ease.Get the support you deserve - Apply today for a stress-free solution to your instant funding needs</p>
+       
+        <a href="https://forms.gle/jLsqu4nf6PBNEe1s5" target="_blank">
+            <button>Apply</button>
+          </a>
+          
+    </main>
+</body>
+
+<footer>
+    <!-- Main Footer Container -->
+    <div class="footer">
+      <!-- Developer Details on the Left -->
+      <div class="developer-details">
+        <p>Developed by: piTech </p>
+      </div>
+  
+      <!-- Loan Calculator in the Center -->
+      <div class="loan-calculator">
+        <h2>Loan Repayment Calculator</h2>
+        <form id="calculator-form">
+          <label for="amount">Loan Amount (K):</label>
+          <input type="number" id="amount" placeholder="Enter loan amount" required />
+          <button type="button" id="calculate-btn">Calculate</button>
+        </form>
+        <div id="results" class="results">
+          <p>Total Repayment Amount: <span id="total-repayment">K0.00</span></p>
+          <p>Weekly Payment for 2 Weeks: <span id="weekly-payment">K0.00</span></p>
+        </div>
+      </div>
+  
+      <!-- Social Media Info on the Right -->
+      <div class="social-media">
+        <p>Follow Us:</p>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </footer>
+  
+
+    <script>
+        document.getElementById('calculate-btn').addEventListener('click', function() {
+        const amount = parseFloat(document.getElementById('amount').value);
+        if (isNaN(amount) || amount <= 0) {
+        alert('Please enter a valid loan amount.');
+        return;
+        }
+        const interestRate = 0.30; // 30% interest
+        const repaymentTermWeeks = 3; // Fixed repayment term of 3 week
+        // Calculate Total Repayment and Weekly Payment
+        const totalRepayment = amount + (amount * interestRate);
+        const weeklyPayment = totalRepayment / repaymentTermWeeks;
+        // Display Results
+        document.getElementById('total-repayment').textContent = `K${totalRepayment.toFixed(2)}`;
+        document.getElementById('weekly-payment').textContent = `K${weeklyPayment.toFixed(2)}`;
+        });
+        </script>
+        
+        </section>
+        </footer>
+
+</html>
+
+
